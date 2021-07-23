@@ -15,7 +15,7 @@ def LCM(x,y):
 
 
 
-x,y,z=input("Enter two nums : ").split()
+x,y,z=input("Enter three nums : ").split()
 x=int(x)
 y=int(y)
 z=int(z)
