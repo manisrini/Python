@@ -22,6 +22,3 @@ z=int(z)
 Lcm = LCM(x,LCM(y,z))	
 print(Lcm)
 
-str="mani"
-new = str
-print(new + 5)
