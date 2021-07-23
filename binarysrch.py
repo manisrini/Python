@@ -1,9 +1,13 @@
 import math
 
-array=[11,22,33,44,55,66]
+array=[]
+size = int(input('Enter array size : '))
+for i in range(size):
+	inp = int(input("Enter arr[%d] : " %(i)))
+	array.append(inp)
 low=0
 high=len(array)-1
-searchnum=int(input("Enter num: "))
+searchnum=int(input("Enter num to be searched: "))
 temp=0
 
 while(low<=high):
@@ -13,7 +17,7 @@ while(low<=high):
 		print("not found")
 		break
 	if(array[middle]==searchnum):
-		print(middle)
+		print("Element found at index %d " %middle)
 		break
 	elif(array[middle] < searchnum):
 		low=middle

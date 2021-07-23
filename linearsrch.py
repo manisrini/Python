@@ -1,5 +1,9 @@
-array=[1,2,3,4,5]
-searchnum = int(input())
+array=[]
+size = int(input('Enter array size : '))
+for i in range(size):
+	inp = int(input("Enter arr[%d] : " %(i)))
+	array.append(inp)
+searchnum = int(input("Enter num to be searched : "))
 flag=0
 
 for i in range(len(array)):
@@ -11,4 +15,4 @@ for i in range(len(array)):
 if(flag == 0):
 	print("not found")
 else:	
-	print(index)		
+	print("Element found at %d" %index)		
